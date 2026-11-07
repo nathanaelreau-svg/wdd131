@@ -1,0 +1,152 @@
+:root { /*color scheme and typography of the pages*/
+    --primary-color: #1d3557;
+    --secondary-color: #457b9d;
+    --background-color: #f4f4f4;
+    --card-color: #ffffff;
+    --text-color: #222222;
+    --heading-font: 'Merriweather', serif;
+    --body-font: 'Roboto', sans-serif;
+}
+
+/*overall page style*/
+body {
+    margin: 0;
+    font-family: var(--body-font);
+    color: var(--text-color);
+    background-color: var(--background-color);
+}
+
+/*header and nav styling*/
+header {
+    background-color: var(--primary-color);
+    color: white;
+    text-align: center;
+    padding: 1rem;
+}
+
+#course-title {
+    display: block;
+    font-family: var(--heading-font);
+    font-size: 1.5rem;
+    font-weight: 700;
+    padding: 0.5rem;
+}
+
+nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: var(--secondary-color);
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    padding: 1rem;
+}
+
+nav a:hover {
+    background-color: var(--primary-color);
+    text-decoration: underline;
+}
+
+/*body*/
+main {
+    max-width: 1000px;
+    margin: 2rem auto;
+    padding: 0 1rem;
+}
+
+.main-grid {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 2rem;
+}
+
+/*grid card styling*/
+.card {
+    background-color: var(--card-color);
+    padding: 1.5rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* About Me section */
+.about-content {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+}
+
+.about-content img {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+/* Country section */
+.country-content {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+}
+
+.country-content figure {
+    flex: 0 0 180px;
+    margin: 0;
+}
+
+.country-content img {
+    width: 110%;
+    height: auto;
+    border-radius: 8px;
+}
+
+.country-content figcaption {
+    text-align: center;
+    font-size: 0.7rem;
+}
+
+/*footer styling*/
+footer {
+    background-color: var(--primary-color);
+    color: white;
+    text-align: center;
+    padding: 1rem;
+    margin-top: 2rem;
+}
+
+footer p {
+    margin: 0.5rem;
+}
+
+/* Typography */
+h1 {
+    font-family: var(--heading-font);/*font of headings*/
+    font-size: 2rem;
+    font-weight: 700;
+    text-align: center;
+}
+
+h2 {
+    font-family: var(--heading-font);/*font of headings*/
+    font-size: 1.4rem;
+    font-weight: 700;
+}
+
+h3 {
+    font-family: var(--heading-font);/*font of headings*/
+    font-size: 1.1rem;
+    font-weight: 700;
+}
+
+p {
+    font-size: 1rem;
+    line-height: 1.6;
+}
+
+nav a {
+    font-size: 1rem;
+    font-weight: 500;
+}

@@ -3,9 +3,99 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>WDD 131</title>
+    <title>WDD 131 - Dynamic Web Fundamentals - Nathanaël Réau</title>
+    <meta name="author" content="Nathanaël Réau">
+    <meta name="description" content="The landing page of the WDD131-Dynamic Web Fundamentals by Nathanaël Réau">
+    <script src="scripts/getdates.js" defer></script>
+    <link rel="stylesheet" href="styles/base.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">    
+
 </head>
+
 <body>
+    <header>
+        <span id="course-title">WDD131 - Dynamic Web Fundamentals</span>
+
+        <nav>
+            <a href="https://www.linkedin.com/">LinkedIn</a>
+            <a href="https://byupw.instructure.com/">Canvas</a>
+            <a href="https://www.churchofjesuschrist.org/study/scriptures/bofm/2-ne/5?lang=eng&id=p27#p27">Scripture</a>
+            <a href="project/">Final Prroject</a>
+        </nav>
+    </header>
+
+    <main>
+        <h1>Nathanaël Réau</h1>
+
+        <div class="main-grid">
+
+            <section class="card">
+                <h2>About Me</h2>
+
+                <div class="about-content">
+                    <p> Hello! My name is Nathanaël Réau. I am currently
+                    studying web development in WDD 131.
+                    I enjoy reading books and litterature. I have lived in France since birth.
+                    I am currently developing my skills in HTML, CSS, and JavaScript.</p>
+
+                    <img src="images/profile.jpg" alt="A photograph of me">
+                </div>
+
+                <h3>Trinité, Martinique</h3>
+
+                <div class="country-content">
+                    <figure>
+                        <img src="images/martinique-flag.jpg" alt="The Flag of Martinique">
+                        <figcaption>Official Flag of Martinique</figcaption>
+                    </figure>
+
+                    <p>
+                        Even though i lived most of my life in France. My family is originally from the island of Martinique.
+                        We often go back there for the summer and to visit my grandparents. I especially like the food and the proximity with the sea.
+                        I am an avid swimmer after all !
+                    </p>
+                </div>
+            </section>
+
+            <section class="card">
+                <h2>Web Dev Resources</h2>
+
+                <ul>
+                    <li>
+                        <a href="https://www.w3schools.com/">W3 Schools</a>
+                    </li>
+
+                    <li>
+                        <a href="https://www.udemy.com/">Udemy</a>
+                    </li>
+
+                    <li>
+                        <a href="https://dev.to/">Dev.to Community</a>
+                    </li>
+
+                    <li>
+                        <a href="https://www.smashingmagazine.com/">Smashing Magazine</a>
+                    </li>
+
+                    <li>
+                        <a href="https://css-tricks.com/">CSS Tricks</a>
+                    </li>
+
+                    <li>
+                        <a href="https://picsum.photos/">Lorem Picsum Image Placeholder</a>
+                    </li>
+                </ul>
+            </section>
+        </div>
+    </main>
     
+    <footer>
+        <p> © <span id="currentyear"></span> Nathanaël Réau | France</p>
+
+        <p id="lastModified"></p>
+    </footer>
 </body>
 </html>
